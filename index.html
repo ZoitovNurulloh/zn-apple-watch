@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Apple-watch</title>
 
   <!-- STYLESHEETS -->
   <link rel="stylesheet" href="/css/style.css">
@@ -13,16 +13,17 @@
 </head>
 
 <body>
-  <header class="header container">
-      <div class="header-logo">
+  <!-- HEADER -->
+  <header class="header">
+      <div class="header-container container">
         <a href="#" class="header-logo__link">
           <img src="/img/logo-apple.svg" alt="Logo-apple" class="header-logo__img" width="35" height="41">
         </a>
-      </div>
+
       <nav class="header-nav">
         <ul class="header-nav__items">
           <li class="header-nav__item">
-            <a href="" class="header-nav__link active">Home</a>
+            <a href="" class="header-nav__link">Home</a>
           </li>
           <li class="header-nav__item">
             <a href="" class="header-nav__link">About</a>
@@ -34,10 +35,12 @@
             <a href="" class="header-nav__link">Services</a>
           </li>
         </ul>
-        
-        <input class="header-search"  type="search" placeholder="How can we help you?" />
-      </nav>
 
+        <form action="https://echo-html-acedemy.ru" class="form-search-input" method="GET">
+          <input class="form-search"  type="search" name="search" placeholder="How can we help you?" aria-label="search" required />
+        </form>
+      </nav>
+    </div>
   </header>
 
   <script src="/js/index.js"></script>
