@@ -2,17 +2,17 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-      url(',,/fonts/Roboto-Regular.woff') format('woff');
+  src: url('/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
-  font-style: normal;,,/fonts/
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(',,/fonts/Roboto-Bold.woff2') format('woff2'),
-      url(',,/fonts/Roboto-Bold.woff') format('woff');
+  src: url('/fonts/Roboto-Bold.woff2') format('woff2'),
+      url('/fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -36,6 +36,7 @@ html {
 
 body {
   display: flex;
+  font-family: "Roboto", "Arial", sans-serif;
   flex-direction: column;
   height: 100%;
   background-color: #fff;
@@ -56,11 +57,86 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1256px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 79px;
+}
+
+
+.header-logo__link {
+  display: flex;
+  text-decoration: none;
+}
+
+.header-logo__img {
+  width: 35px;
+  height: 41px;
+  object-fit: cover;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav__items {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav__item {
+  list-style: none;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header-nav__link {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-decoration: none;
+  color: #333;
+}
+
+.header-nav__link:hover {
+  opacity: 0.8;
+}
+
+.header-nav__link:active {
+  opacity: 0.6;
+}
+
+.header-search {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: 15px;
+  line-height: 22px;
+  padding: 5px;
+  margin-left: 40px;
+  border: 0;
+  border-bottom: 1px solid #333333;
+}
+
+.active {
+  margin-top: 6px;
+  border-bottom: 3px solid #333;
 }
 
 
