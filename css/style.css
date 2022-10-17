@@ -49,7 +49,7 @@ body {
   height: 100%;
   background-color: #fff;
   color: var(--text-color);
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto",  "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   padding: 0;
@@ -70,6 +70,29 @@ img {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-block;
+  padding: 12px 38px;
+  border: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  text-decoration: none;
+  background-color: var(--primary);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
 }
 
 
@@ -120,7 +143,6 @@ img {
   padding-top: 6px;
   padding-bottom: 3px;
   border-bottom: 3px solid transparent;
-  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   text-decoration: none;
@@ -143,8 +165,7 @@ img {
   margin-left: 40px;
   border: 0;
   border-bottom: 1px solid var(--text-color);
-  font-family: "Roboto", "Arial", sans-serif;
-  font-style: 15px;
+  font-size: 15px;
   line-height: 22px;
 }
 
@@ -153,4 +174,41 @@ img {
 
 .main-content {
   flex-grow: 1;
+
+}
+/* HERO-SECTION */
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding-top: 91px;
+  padding-bottom:183px;
+  border-bottom: 2px solid #ddd;
+  background-image: url(/img/intro-bg.png);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 445px) bottom;
+
+}
+
+.hero-left {
+  width: 100%;
+  max-width: 490px;
+}
+
+.hero-left__heading {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
+}
+
+.hero-left__title {
+  width: 450px;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin-bottom: 30px;
+  color: #777;
 }
