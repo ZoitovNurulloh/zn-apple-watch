@@ -95,6 +95,40 @@ img {
   opacity: 0.6;
 }
 
+.info-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--primary);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: width  0.3s  ease;
+}
+
+.info-link::before {
+  width: 40px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: var(--primary);
+  content: "";
+}
+
+.info-link:hover::before {
+  width: 60px;
+}
+
+.btn-buy {
+  padding: 12px 90px
+}
+
+.btn-runners {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+
 
 /* HEADER */
 
@@ -247,26 +281,94 @@ img {
   line-height: 24px;
 }
 
-.info-link {
-  display: inline-flex;
+
+
+/* FETURES-SECTION */
+
+.features {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.features-container {
+  display: flex;
   align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
-  color: var(--primary);
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: width 0.3s ease;
+  justify-content: space-between;
+
 }
 
-.info-link::before {
-  width: 40px;
-  height: 3px;
-  margin-right: 10px;
-  background-color: var(--primary);
-  content: "";
+.features-heading {
+  width: 380px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 60px;
+  color: #000;
 }
 
-.info-link:hover::before {
-  width: 60px;
+.features-title {
+  width: 490px;
+  padding-left: 37px;
+  border-left: 3px solid #888;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.features-wrapeer__right-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS */
+
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  color: #fff;
+  background-image: url(../img/runners.jpg);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-info {
+  width: 490px;
+  margin-left: auto;
+}
+.runners-heading {
+  width: 490px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.runners-title {
+  width: 490px;
+  padding-left: 37px;
+  border-left: 3px solid #fff;
+  margin-bottom: 30px;
+}
+
+
+/* RETINA-BG */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url(../img/intro-bg@2x.png);
+  }
+
+  .runners {
+    background-image: url(../img/runners@2x.jpg);
+  }
 }
